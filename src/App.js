@@ -19,7 +19,7 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Avengers: by Marshall</h1>
         </header>
-        <p>Avengers: {this.state.avengers.map((avenger) => avenger + ", ")}</p>
+        <div>Avengers: {this.state.avengers.map((avenger) => <div>{avenger}</div>)}</div>
       </div>
     );
   }
